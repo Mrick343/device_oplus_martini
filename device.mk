@@ -34,7 +34,7 @@ TARGET_NFC_CHIPSET := snxxx
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage \
-    $(LOCAL_PATH)/overlay-aosp
+    $(LOCAL_PATH)/overlay-xtended
 
 PRODUCT_PACKAGES += \
     FaceUnlockServiceMartini \
