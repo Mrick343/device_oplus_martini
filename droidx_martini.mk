@@ -11,10 +11,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from martini device
 $(call inherit-product, device/oplus/martini/device.mk)
 
-# Inherit some common PixelOS stuff.
-$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
+# Inherit some common DroidxOS stuff.
+$(call inherit-product, vendor/droidx/config/common_full_phone.mk)
 
-PRODUCT_NAME := xtended_martini
+PRODUCT_NAME := droidx_martini
 PRODUCT_DEVICE := martini
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -36,9 +36,14 @@ BUILD_FINGERPRINT := OnePlus/martini/OP5155L1:13/TP1A.220624.014/R.202208300852:
 # SoC
 PROCESSOR_MODEL := SM8350
 
-#official
-XTENDED_BUILD_TYPE := UNOFFICIAL
-XTENDED_BUILD_MAINTAINER := Mrick343
+#droidxOS
+DROIDX_BUILDTYPE := OFFICIAL
 
-#GAPPS
-WITH_GAPPS := true
+#Gapps prop
+DROIDX_GAPPS := true
+
+#Blur
+TARGET_SUPPORTS_BLUR := true
+
+# Bootanimation Resolution
+TARGET_BOOT_ANIMATION_RES := 1080

@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xtended_martini.mk
+    $(LOCAL_DIR)/droidx_martini.mk
 
 COMMON_LUNCH_CHOICES := \
-    xtended_martini-user \
-    xtended_martini-userdebug \
-    xtended_martini-eng
+    droidx_martini-user \
+    droidx_martini-userdebug \
+    droidx_martini-eng
